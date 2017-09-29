@@ -4,19 +4,26 @@
 // Markup: buttons.html
 //
 // .button-red    - Red button
+// .button-blue   - Blue button
 //
 // styleguide Components.buttons
 
 .button {
-  display: inline-block;
   background-color: #ccc;
-  padding: 10px;
   border-radius: 5px;
   color: #000;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
 .button-red {
   background-color: red;
-  color: green;
+  color: #fff;
+}
+
+.button-blue {
+  background-color: blue;
+  color: #fff;
 }
