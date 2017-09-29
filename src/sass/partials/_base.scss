@@ -1,0 +1,36 @@
+//
+// Basic styles
+//
+// Styles for basic HTML elements.
+//
+// styleguide Base
+
+//
+// Base definitions
+//
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+//
+// Headings
+//
+// Markup:
+// <h1>Blah</h1>
+//
+// styleguide Base.headings
+
+h1 {
+  color: red;
+  font-size: 3.2rem;
+}
