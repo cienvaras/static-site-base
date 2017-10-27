@@ -38,6 +38,15 @@ gulp.task('html:dev', function () {
 })
 
 //
+// Images Dev Workflow.
+//
+gulp.task('images:dev', function () {
+  return gulp.src('src/**/*.{png,jpg,jpeg,gif}')
+    .pipe(gulp.dest('.tmp'))
+    .pipe(connect.reload())
+})
+
+//
 // CSS Dev Workflow.
 //
 gulp.task('styles:dev', function () {
@@ -62,7 +71,7 @@ gulp.task('js:dev', function () {
     .pipe(concat('script.js'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('.tmp/js'))
-});
+})
 
 //
 // Javascript linting.
@@ -103,6 +112,7 @@ gulp.task('connect', function () {
 gulp.task('watch', function () {
   gulp.watch('src/sass/**/*.scss', ['styles:dev'])
   gulp.watch('src/**/*.html', ['html:dev'])
+  gulp.watch('src/**/*.(png|jpe?g|gif)', ['images:dev'])
   gulp.watch('src/js/**/*.js', ['lint', 'js:dev'])
   gulp.watch('src/sass/**/*', ['styleguide'])
 })
@@ -110,4 +120,4 @@ gulp.task('watch', function () {
 //
 // Task declarations.
 //
-gulp.task('dev', ['html:dev', 'styles:dev', 'js:dev', 'styleguide', 'connect', 'watch'])
+gulp.task('dev', ['html:dev', 'images:dev', 'styles:dev', 'js:dev', 'styleguide', 'connect', 'watch'])
