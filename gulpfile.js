@@ -180,5 +180,5 @@ gulp.task('clean', function () {
 // Composite Task declarations.
 //
 gulp.task('dev', ['html:dev', 'images:dev', 'styles:dev', 'js:dev', 'connect', 'watch'])
-gulp.task('build', ['html:prod', 'images:prod', 'styles:prod', 'js:prod'])
+gulp.task('build', ['lint', 'html:prod', 'images:prod', 'styles:prod', 'js:prod'])
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:watch'])
