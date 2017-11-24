@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Base environment for static site development",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "styleguide": "gulp styleguide",
+    "build": "gulp build",
+    "clean": "gulp clean"
   },
   "author": "Andrés Díaz Soto <andres.diaz.soto@gmail.com>",
   "license": "MIT",
@@ -11,6 +14,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
@@ -25,8 +29,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
     "gulp-eslint": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^4.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
     "kss": "^3.0.0-beta.18"
   }
 }
