@@ -3,5 +3,5 @@
   "env": {
     "browser": true
   },
-  "extends": "standard"
+  "extends": "airbnb-base"
 }

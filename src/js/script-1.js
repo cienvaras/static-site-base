@@ -1,5 +1,3 @@
-'use strict'
+const test = 'This is a test';
 
-let test = 'This is a test'
-
-console.log(test)
+console.log(test);

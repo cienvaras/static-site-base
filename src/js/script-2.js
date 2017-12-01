@@ -1,14 +1,12 @@
-'use strict'
-
 class TestClass {
-  constructor (msg) {
-    this.msg = msg
+  constructor(msg) {
+    this.msg = msg;
   }
-  getMsg () {
-    return this.msg
+  getMsg() {
+    return this.msg;
   }
 }
 
-let test = new TestClass('This is another test')
+const test = new TestClass('This is another test');
 
-console.log(test.getMsg())
+console.log(test.getMsg());
